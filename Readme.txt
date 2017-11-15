@@ -4,3 +4,4 @@ Structure:
 
 .
 index.html
+Readme.txt
