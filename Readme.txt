@@ -5,4 +5,3 @@ Structure:
 .
 index.html
 Readme.txt
-TestChange
