@@ -1,2 +1,6 @@
-Simple text
-Test 2
+This is a simple training project.
+
+Structure:
+
+.
+index.html
