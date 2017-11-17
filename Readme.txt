@@ -6,3 +6,5 @@ Structure:
 index.html
 Readme.txt
 app.js
+
+# Sublime configured
