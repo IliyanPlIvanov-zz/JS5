@@ -1,6 +1,14 @@
-let xhr = new XMLHttpRequest();
-xhr.open("GET", "https://discordapp.com/", false);
-xhr.send();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-console.log(xhr.status);
-console.log(xhr.statusText);
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('pong');
+  }
+});
+
+client.login('token');
