@@ -6,3 +6,12 @@ img {
 	position: fixed;
 	min-width: 620px;
 }
+
+.btn {
+	border: none;
+	outline: none;
+	padding:5px 20px;
+	background-color: dimgray;
+	cursor: pointer;
+	color: floralwhite;
+}
