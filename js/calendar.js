@@ -31,3 +31,13 @@ function sortByDateAdded(arr) {}
 
 function sortAlphabetically(arr) {}
 
+function showHideList() {
+	let list = document.getElementsByClassName('list');
+	for (let i = 0; i < list.length; i++) {
+		if ( list[i].style.display === "none" ) {
+			list[i].style.display = "block";
+		} else { 
+			list[i].style.display = "none";
+		}
+	}
+}

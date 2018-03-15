@@ -1,3 +1,8 @@
 img {
 	vertical-align: text-bottom;
 }
+
+.list {
+	position: fixed;
+	min-width: 620px;
+}
