@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="js/calendar.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/calendar.css" />
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<title>Upcoming Games List</title>
 </head>
 
@@ -15,9 +16,9 @@
 	<input type="button" id="toggle" class="btn" onclick="showHideList()" value="Hide">
 	<div class="list" id="gameslist">
 		<br>
-		<input type="text" id="title" size="60">
-		<input type="text" id="datepicker" size="15">
-		<img src="resources/plus15.png" id="addItem" />
+		<input class="row flash" type="text" id="title" size="60">
+		<input class="row" type="text" id="datepicker" size="15">
+		<i class="far fa-calendar-plus" id="addItem" onclick="addItem()"></i>
 		<br>
 	</div>
 

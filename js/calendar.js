@@ -16,21 +16,6 @@ console.log(dod);
 document.getElementById("gameslist").innerHTML = `${dod}`;
 */
 
-function addItem(title, date) {
-	title = document.getElementById('title').innerHTML;
-	date = document.getElementById('date').innerHTML;
-}
-
-function editItem(arr) {}
-
-function deleteItem(arr) {}
-
-function sortByRelDate(arr) {}
-
-function sortByDateAdded(arr) {}
-
-function sortAlphabetically(arr) {}
-
 function showHideList() {
 	let list = document.getElementsByClassName('list');
 	let buttonTextChange = document.getElementById('toggle');
@@ -44,3 +29,22 @@ function showHideList() {
 		}
 	}
 }
+
+function addItem(title, date) {
+	title = document.getElementById('title').value;
+	date = document.getElementById('datepicker').value;
+	if (title !== '' && date !== '')
+		console.log(`${title} ${date}`)
+	//else {
+}
+
+function editItem(arr) {}
+
+function deleteItem(arr) {}
+
+function sortByRelDate(arr) {}
+
+function sortByDateAdded(arr) {}
+
+function sortAlphabetically(arr) {}
+

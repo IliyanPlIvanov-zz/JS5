@@ -1,5 +1,12 @@
-img {
-	vertical-align: text-bottom;
+.far {
+	font-size: 15px;
+	cursor: pointer;
+	user-select: none;
+	color: black;
+}
+
+.far:hover {
+	color: green;
 }
 
 .list {
@@ -10,8 +17,36 @@ img {
 .btn {
 	border: none;
 	outline: none;
-	padding:5px 20px;
+	padding: 5px 20px;
 	background-color: dimgray;
 	cursor: pointer;
 	color: floralwhite;
+}
+
+.row {
+	background-color: white;
+}
+
+.flash {
+	background: red;
+	-webkit-animation: flash linear 0.2s infinite;
+	animation: flash linear 0.2s 3;
+}
+
+@-webkit-keyframes flash {
+	100% {
+		opacity: 1;
+	}
+	0% {
+		opacity: 0;
+	}
+}
+
+@keyframes flash {
+	100% {
+		opacity: 1;
+	}
+	0% {
+		opacity: 0;
+	}
 }
