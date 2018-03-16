@@ -24,29 +24,19 @@
 }
 
 .row {
-	background-color: white;
+	/*background-color: white;*/
+	border: 1px solid;
 }
 
 .flash {
-	background: red;
-	-webkit-animation: flash linear 0.2s infinite;
 	animation: flash linear 0.2s 3;
 }
 
-@-webkit-keyframes flash {
-	100% {
-		opacity: 1;
-	}
-	0% {
-		opacity: 0;
-	}
-}
-
 @keyframes flash {
-	100% {
-		opacity: 1;
-	}
 	0% {
-		opacity: 0;
+		border: 1px solid red;
+	}
+	100% {
+		border: 1px solid black;
 	}
 }
