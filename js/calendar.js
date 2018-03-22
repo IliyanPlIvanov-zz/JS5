@@ -2,20 +2,6 @@
 
 // Here goes nothing!
 
-let relDate = new Date();
-const year = String(relDate.getFullYear());
-const month = String(relDate.getMonth() + 1);
-const day = String(relDate.getDate());
-
-//console.log(oneItem);
-
-/*
-const dod = `${day.padStart(2, "0")}-${month.padStart(2, "0")}-${year}`;
-console.log(dod);
-
-document.getElementById("gameslist").innerHTML = `${dod}`;
-*/
-
 function showHideList() {
 	let list = document.getElementsByClassName('list');
 	let buttonTextChange = document.getElementById('toggle');
@@ -30,11 +16,10 @@ function showHideList() {
 	}
 }
 
-function addItem(title, date, flashInput) {
+function flashIfEmpty() {
 	
-	title = document.getElementById('title');
-	date = document.getElementById('datepicker');
-	flashInput = title.className;
+	let title = document.getElementById('title');
+	let date = document.getElementById('datepicker');
 	
 	if (title.value !== '' && date.value !== '') {
 		console.log(`${title.value} ${date.value}`);
@@ -47,6 +32,10 @@ function addItem(title, date, flashInput) {
 		title.classList.remove('flash');
 		date.classList.remove('flash');
 	}, 1500);
+}
+
+function addNewItem(newTitle, newDate, delButton) {
+	
 }
 
 function editItem(arr) {}

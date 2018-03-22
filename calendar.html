@@ -14,11 +14,11 @@
 	<h1>List</h1>
 	<p></p>
 	<input type="button" id="toggle" class="btn" onclick="showHideList()" value="Hide">
-	<div class="list" id="gameslist">
+	<div class="list">
 		<br>
 		<input class="row" type="text" id="title" size="60" required>
 		<input class="row" type="text" id="datepicker" size="15" required>
-		<i class="far fa-calendar-plus" id="addItem" onclick="addItem()"></i>
+		<i class="far fa-calendar-plus" id="addItem" onclick="flashIfEmpty()"></i>
 		<br>
 	</div>
 
