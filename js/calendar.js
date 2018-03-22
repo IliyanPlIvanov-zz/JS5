@@ -34,9 +34,9 @@ function flashIfEmpty() {
 	}, 1500);
 }
 
-console.log(document.querySelector('i'));
+//console.log(document.querySelector('i'));
 
-//document.querySelector('i').addEventListener('click', flashIfEmpty, false);
+document.querySelector('i').addEventListener('click', flashIfEmpty, false);
 
 function addNewItem(newTitle, newDate, delButton) {
 	
