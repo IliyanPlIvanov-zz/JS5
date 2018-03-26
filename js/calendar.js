@@ -16,19 +16,20 @@ function showHideList() {
 	}
 }
 
+document.getElementById('toggle').addEventListener('click', showHideList, false);
+
 function flashIfEmpty() {
-	
 	let title = document.getElementById('title');
 	let date = document.getElementById('datepicker');
-	
+
 	if (title.value !== '' && date.value !== '') {
 		console.log(`${title.value} ${date.value}`);
 	} else {
 		title.classList.add('flash');
 		date.classList.add('flash');
 	}
-	
-	setTimeout(function(){
+
+	setTimeout(function () {
 		title.classList.remove('flash');
 		date.classList.remove('flash');
 	}, 1500);
@@ -36,11 +37,21 @@ function flashIfEmpty() {
 
 //console.log(document.querySelector('i'));
 
-document.querySelector('i').addEventListener('click', flashIfEmpty, false);
 
 function addNewItem(newTitle, newDate, delButton) {
+	let list = document.getElementsByClassName('list');
+	let addBtn = document.querySelector('i');
 	
+	newTitleTxt = document.getElementById('title');
+	newTitle = document.createElement('input').className('row').size(60).requred = true;
+	newDateValue = document.getElementById('datepicker');
+	newDate = document.createElement('input').className('row').size(15).requred = true;
+	delButton = document.createElement('i').className('far fa-trash-alt');
+	newTitle.appendChild(newTitleTxt);
+	newDate.appendChild(newDateValue);
 }
+
+document.querySelector('i').addEventListener('click', flashIfEmpty, addNewItem, false);
 
 function editItem(arr) {}
 

@@ -9,6 +9,10 @@
 	color: green;
 }
 
+.fa-trash-alt:hover {
+	color: red;
+}
+
 .list {
 	position: fixed;
 	min-width: 620px;
@@ -26,6 +30,7 @@
 .row {
 	/*background-color: white;*/
 	border: 1px solid;
+	padding: 0px 2px;
 }
 
 .flash {
